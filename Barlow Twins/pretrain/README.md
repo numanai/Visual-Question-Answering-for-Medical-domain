@@ -53,3 +53,5 @@ The search space of the hyperparameters can be defined starting line 40 onwards.
 ```yaml
 python train.py trainer.gpus=1
 ```
+
+The code is inpsired from https://github.com/IgorSusmelj/barlowtwins
