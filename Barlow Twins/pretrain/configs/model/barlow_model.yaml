@@ -1,0 +1,11 @@
+_target_: src.models.barlow_model.BarlowTwins
+
+backbone: resnet50 # The encoder model
+proj_head_dim: 1024
+proj_head_out: 1024 # Projection head network output dimension
+lambda_param: 3.9e-3
+#num_mlp_layers: 3 # number of layers in the projection head neural network
+pretrained: True # backbone model pretrained or not 
+max_epochs: 100
+
+

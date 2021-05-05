@@ -1,0 +1,9 @@
+_target_: src.datamodules.barlow_datamodule.BARLOWDataModule
+
+data_dir: ${data_dir}  # data_dir is specified in config.yaml
+dataset: CheXpert
+batch_size: 128
+num_workers: 4
+label_list: all
+pin_memory: True
+
