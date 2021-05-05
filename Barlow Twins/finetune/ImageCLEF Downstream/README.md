@@ -15,6 +15,3 @@ To generate the dataset for training and testing,
 ### How to train
 *First Step* Define the model in ResNetModelSSL class and load the pretrained weights. 
 *Second Step* Run the training loop
-
-
-The code was inspired from https://github.com/UCSD-AI4H/COVID-CT/tree/master/baseline%20methods/Self-Trans
