@@ -39,8 +39,9 @@ python train.py trainer.max_epochs=100 optimizer.lr=0.001 datamodule.dataset = I
 or you can update dataset name in  `barlow_datamodule.yaml`
 
 The script doesn't include any validation loops, but it does track the
-contrastive loss via Tensorboard and you'll see the accuracy of the contrastive
-classifier.
+contrastive loss via wandb and you'll see the training loss of the contrastive
+classifier online. If you want to save wandb logs locally, you can set `offline: True` in
+`wandb.yaml' file.
 
 After pretraining, you can copy your model to the `finetune` to test the accuracy
 on your downstream task.
