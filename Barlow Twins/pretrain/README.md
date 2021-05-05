@@ -41,7 +41,15 @@ or you can update dataset name in  `barlow_datamodule.yaml`
 The script doesn't include any validation loops, but it does track the
 contrastive loss via wandb and you'll see the training loss of the contrastive
 classifier online. If you want to save wandb logs locally, you can set `offline: True` in
-`wandb.yaml' file.
+`wandb.yaml` file.
 
 After pretraining, you can copy your model to the `finetune` to test the accuracy
 on your downstream task.
+
+### Hyperparameter Optimization
+You can use optuna to optimize your hyperparameters by modifying `config_optuna.yaml`. To define the number of experiments to be excuted and the sampler, change `n_trials:` at line 33 and `sampler:` at line 37 respectively. 
+The search space of the hyperparameters can be defined starting line 40 onwards.
+
+```yaml
+python train.py trainer.gpus=1
+```
