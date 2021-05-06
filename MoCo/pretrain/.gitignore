@@ -1,0 +1,6 @@
+data/
+wandb/
+logs/runs/
+LICENSE
+test.ipynb
+tests/

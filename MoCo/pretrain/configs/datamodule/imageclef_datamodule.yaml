@@ -1,0 +1,8 @@
+_target_: src.datamodules.imageclef_datamodule.ImageclefDataModule
+
+data_dir: ${data_dir}  # data_dir is specified in config.yaml
+batch_size: 64
+im_size: 224
+label_list: all
+num_workers: 4
+use_two_images: True
