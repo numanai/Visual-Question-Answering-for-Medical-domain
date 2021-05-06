@@ -11,9 +11,9 @@
 
 ## Description
 Visual Question Answering (VQA) is a rising interdisciplinary problem that demands the knowledge of both Computer Vision (CV) and Natural Language Processing (NLP). Many domain-specific VQA tasks have emerged in the last few years, and VQA in the medical domain is one such that plays a significant role in providing medical assistance to both doctors and patients. For example, doctors could use VQA model answers as assistance in medical diagnosis, while patients could ask questions from VQA related to their medical images to better understand their physical condition. <br>
-A VQA system takes as input an image and a natural language question about the image and produces an answer consistent with the visual content of a given image. To facilitate the research of implementing VQA in medical domain, ImageCLEF, which is part of the Conference and Labs of the Evaluation Forum (CLEF), has been conducting annual VQA-Med challenges since 2018. In this project, we will be using the dataset coming from VQA-Med 2020 challenge for training. As far as our knowledge goes, recent VQA-Med challenge participants have not used self-supervised learning (SSL) techniques and instead have focused on transfer learning, ensemble models, etc. Thus, towards the possible solution of the VQA-Med problem, in this project we implement two contrastive learning frameworks, MoCo and Barlow Twins pretrained on different medical datasets and fine-tuned on VQA-Med 2020 dataset.<br>
-This repository contains two folders: Barlow Twins and MoCo, each containing the code baselines for Barlow Twins and MoCo contrastive learning frameworks.
+A VQA system takes as input an image and a natural language question about the image and produces an answer consistent with the visual content of a given image. To facilitate the research of implementing VQA in medical domain, ImageCLEF, which is part of the Conference and Labs of the Evaluation Forum (CLEF), has been conducting annual VQA-Med challenges since 2018. In this project, we will be using the dataset coming from VQA-Med 2020 challenge for training. As far as our knowledge goes, recent VQA-Med challenge participants have not used self-supervised learning (SSL) techniques and instead have focused on transfer learning, ensemble models, etc. Thus, towards the possible solution of the VQA-Med problem, in this project we implement two contrastive learning frameworks, MoCo and Barlow Twins pretrained on different medical datasets and fine-tuned on VQA-Med 2020 dataset.
 
+This repository contains two folders: Barlow Twins and MoCo, each containing the code baselines for Barlow Twins and MoCo contrastive learning frameworks.
 
 ## How to run
 Install dependencies
@@ -32,10 +32,11 @@ pip install -r requirements.txt
 The instructions to run the pretraining and finetuning codes for both SSL methods, i.e., MoCo and Barlow Twins, can be found in the respective directories.
 
 ## Demo
-
+We further provide some of the sample inputs and outputs of the model. Inputs are the natural language questions about the images, and answers are the medical diseases. Some of the answers are consistent with the ground truth, while others are not.
+![demo1](/demo images/demo1.png)
 ## Datasets
 #### Datasets used for pretraining:
-1. ImageCLEF from 2018 till 2020 - [ImageCLEF-2018](https://www.aicrowd.com/challenges/imageclef-2018-vqa-med ), [ImageCLEF-2019](https://github.com/abachaa/VQA-Med-2019), [ImageCLEF-2020](https://github.com/abachaa/VQA-Med-2020). Please note that a signed and approved End User Agreement (EUA) is required to use these datasets.
+1. ImageCLEF from 2018 till 2020 - [ImageCLEF-2018](https://www.aicrowd.com/clef_tasks/8/task_dataset_files?challenge_id=155), [ImageCLEF-2019](https://github.com/abachaa/VQA-Med-2019), [ImageCLEF-2020](https://github.com/abachaa/VQA-Med-2020). Please note that a signed and approved End User Agreement (EUA) is required to use these datasets.
 2. [CheXpert dataset](https://stanfordmlgroup.github.io/competitions/chexpert/)
 3. [MIMIC-CXR](https://mimic-cxr.mit.edu/)
 CheXpert and MIMIC-CXR datasets were not explicitly used in this project, rather the weights of the model pretrained on them were adapted to initialize our own models.
