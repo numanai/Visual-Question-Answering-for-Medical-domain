@@ -45,6 +45,7 @@ We further provide some of the sample inputs and outputs of the model. Inputs ar
 1. ImageCLEF from 2018 till 2020 - [ImageCLEF-2018](https://www.aicrowd.com/clef_tasks/8/task_dataset_files?challenge_id=155), [ImageCLEF-2019](https://github.com/abachaa/VQA-Med-2019), [ImageCLEF-2020](https://github.com/abachaa/VQA-Med-2020). Please note that a signed and approved End User Agreement (EUA) is required to use these datasets.
 2. [CheXpert dataset](https://stanfordmlgroup.github.io/competitions/chexpert/)
 3. [MIMIC-CXR](https://mimic-cxr.mit.edu/)
+
 CheXpert and MIMIC-CXR datasets were not explicitly used in this project, rather the weights of the model pretrained on them were adapted to initialize our own models.
 #### Datasets used for fine-tuning:
 1. [ImageCLEF-2020](https://github.com/abachaa/VQA-Med-2020) from ImageCLEF-2020 VQA in medical domain challenge
