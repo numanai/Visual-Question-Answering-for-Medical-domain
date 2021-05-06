@@ -33,7 +33,9 @@ The instructions to run the pretraining and finetuning codes for both SSL method
 
 ## Demo
 We further provide some of the sample inputs and outputs of the model. Inputs are the natural language questions about the images, and answers are the medical diseases. Some of the answers are consistent with the ground truth, while others are not.
+
 ![demo1](/demo images/demo1.png)
+
 ## Datasets
 #### Datasets used for pretraining:
 1. ImageCLEF from 2018 till 2020 - [ImageCLEF-2018](https://www.aicrowd.com/clef_tasks/8/task_dataset_files?challenge_id=155), [ImageCLEF-2019](https://github.com/abachaa/VQA-Med-2019), [ImageCLEF-2020](https://github.com/abachaa/VQA-Med-2020). Please note that a signed and approved End User Agreement (EUA) is required to use these datasets.
