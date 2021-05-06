@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 The instructions to run the pretraining and finetuning codes for both SSL methods, i.e., MoCo and Barlow Twins, can be found in the respective directories.
 
-## Demo
+## Demo 
 We further provide some of the sample inputs and outputs of the model. Inputs are the natural language questions about the images, and answers are the medical diseases. Some of the answers are consistent with the ground truth, while others are not.
 
 <p align="middle">
@@ -54,3 +54,4 @@ CheXpert and MIMIC-CXR datasets were not explicitly used in this project, rather
 ```yaml
 Elnura Zhalieva (ryuzakizh) and Numan Saeed (numanai)
 ```
+## Date and time
