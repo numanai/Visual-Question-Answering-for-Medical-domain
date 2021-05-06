@@ -36,8 +36,8 @@ We further provide some of the sample inputs and outputs of the model. Inputs ar
 
 <p align="middle">
   <img src="./demo_images/demo1.png" width="32%" height="200" />
-  <img src="./demo_images/demo2.png" width="32%" height="200"/> 
-  <img src="./demo_images/demo3.png" width="32%" height="200"/>
+  <img src="./demo_images/demo2.png" width="30%" height="200"/> 
+  <img src="./demo_images/demo3.png" width="25%" height="200"/>
 </p>
 
 ## Datasets
