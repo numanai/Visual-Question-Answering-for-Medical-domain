@@ -34,7 +34,11 @@ The instructions to run the pretraining and finetuning codes for both SSL method
 ## Demo
 We further provide some of the sample inputs and outputs of the model. Inputs are the natural language questions about the images, and answers are the medical diseases. Some of the answers are consistent with the ground truth, while others are not.
 
-![demo1](./demo_images/demo1.png)
+<p align="middle">
+  <img src="./demo_images/demo1.png" width="100" />
+  <img src="./demo_images/demo2.png" width="100" /> 
+  <img src="./demo_images/demo3.png" width="100" />
+</p>
 
 ## Datasets
 #### Datasets used for pretraining:
