@@ -13,8 +13,10 @@ To generate the dataset for training and testing,
 
 
 ### How to train
-*First Step* Download and update the path for the dataset. 
+*First Step* Download and update the path for the dataset.
+
 *Second Step* Copy the pretrained model file `.ckpt` and update the path
+
 *Third Step* Run the training function 
 
 
