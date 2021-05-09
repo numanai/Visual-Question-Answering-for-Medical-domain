@@ -54,4 +54,3 @@ CheXpert and MIMIC-CXR datasets were not explicitly used in this project, rather
 ```yaml
 Elnura Zhalieva (ryuzakizh) and Numan Saeed (numanai)
 ```
-## Date and time
